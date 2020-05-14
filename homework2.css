@@ -1,0 +1,45 @@
+body {background-color: yellow}
+
+:link {background-color: yellow}
+
+:visited {color: blue}
+
+h1 {color: red; text-align: center}
+
+p::first-letter {font-size: 40px; font-style: italic; font-weight: bold}
+
+h2 {color: blue; text-align: right; font-style: italic}
+
+h3 {color: blue; text-align: right; font-size: 30px; font-style: italic}
+
+h4 {color: red; text-align: right}
+
+table {background-color: cyan; padding:10px; border-spacing: 5px}
+
+tr {text-align: center; font-weight: normal}
+
+td:first-child {text-align: center; font-weight: bold}
+
+@keyframes example {
+  from {background-color: cyan; color: black}
+  to {background-color: green; color: white}
+}
+
+@-moz-keyframes example /* Firefox */
+{
+from {background-color: cyan; color: black}
+to {background-color: green; color: white}
+}
+
+@-webkit-keyframes example /* Safari and Chrome */
+{
+from {background-color: cyan; color: black}
+to {background-color: green; color: white}
+} 
+
+div {
+  animation-name: example;
+  animation-duration: 5s;
+    -moz-animation: myfirst 5s; /* Firefox */
+    -webkit-animation: myfirst 5s; /* Safari and Chrome */
+}
